@@ -9,7 +9,9 @@ Reddit is a large famous forum. Most of the users comes from around the world, b
 
 The interesting part about reddit is, that it is a large forum with many different types of people, from rich to poor, tall to small and many other factors. All these people are put together on a global scale and is able to communicate about anything they desire. The behaviour of people on the forum can be interesting to see, and the contents of what people discuss, can be reflected on society.
 
-Each of the major categories is from a subreddit called "TheoryOfReddit". Here people discuss data about reddit, and the categories are originating from a dicussion of a topic on reddit. <a href="https://www.reddit.com/r/TheoryOfReddit/comments/1f7hqc/the_200_most_active_subreddits_categorized_by/">The discussion can be seen be seen here</a>
+Each of the categories is from a subreddit called "TheoryOfReddit". Here people discuss data about reddit, and the categories are originating from a dicussion of a topic on reddit. <a href="https://www.reddit.com/r/TheoryOfReddit/comments/1f7hqc/the_200_most_active_subreddits_categorized_by/">The discussion can be seen be seen here</a>
+
+The data is fetched from reddit in the start of November 2018. <a href="https://drive.google.com/open?id=1uvFVS-QrKgAvG0nZnEKb190qXhydq9av">The data can be found here.</a>
 
 # The comments
 
@@ -19,19 +21,28 @@ Let's start by looking at the comments and more particularly what they consist o
 	<img src="./Images/Clouds.png" />
 </div>
 
-* React to clouds
+It is always interesting to look at what is being discussed in each of the categories. But there are some interesting ones that stand out! For example news and issues. Trump is being mentioned alot! He is also one of the most discussed presidents of the USA, especially because there are so many divided thought of him. But the highest probability of why Trump was mentioned alot in the news section, was because of the election for the house of representatives. People also call him the "Meme president" on various sites, since he is known to draw much attention to himself using twitter.
 
-* What is sentiment in texts
-* Something about why it is interesting to do in this analysis
+It is interesting that Apple, Iphone and especially apps are mentioned many times in the subreddits categorized by technology. The reason why, is simply because phones are a major part of the everyday life of anyone. I bet you can recognize yourself looking at your phone many times a day!
+
+The word clouds clearly reflects the name of the categories, and has many more interesting results!
+
+
+
+A sentiment analysis is a way to categorize attitude of a writer towards a topic. Whether it is positive, negative or neutral. In this specific case the sentiment analyses the commenters on the subreddit, and their general attitudes in the posts in each of the categories. 
+
+It is interesting to see the attitude of the commenters on Reddit, especially to get a general attitude of how people are towards one another.
 
 <div align="center">
 	<img src="./Images/Sentiment_Scores.png" />
 </div>
 
-* React to highest and lowest scoring category
+The resulting sentiment analysis is very close to eachother, meaning that there are not really a big difference in peoples general attitude on the subreddits. But what is noticable is that when looking at the word clouds, one can notice that people are using the words fuck and shit on the "News and Issues" category. Comparing this to the "nice" and "love which is found in "Lifestyle and Help", we can clearly see a major difference in how people talk to one another. 
 
-* Segway to why it is interesting to do lexical dispersion of those two category
-* What is lexical dispersion
+People on social media are more likely to be offensive to eachother in the cases that divides people, such as especially politics and news.
+
+Because of this major difference, it could be interesting to look at a lexical dispersion plot of those two categories.
+A lexical dispersion plot is a plot where each stribe represents an occurence of a word, and each row represents all of the comments. We can use this to see how much some words are being mentioned in each category.
 
 <div align="center">
 	<h3>News and Issues</h3>
@@ -43,30 +54,30 @@ Let's start by looking at the comments and more particularly what they consist o
 	<img src="./Images/Lifestyle_Lexical.png" />
 </div>
 
-* React on the two plots
+When you look at each of these plots, we clearly see that in news and issues, the word love is being used with quite big intervals in comparison to how much it is used in lifestyle and help! Whereas fuck, shit and bad is used way more! 
 
-* Segway to network analysis on the subreddits and categories.
+The lexical dispersion plot might show a bit of how users behave on the internet. And yea, we all know that people can be real assholes on the internet! Especially when discussing. This is however proof, which of course has to be taken in consideration, that people do treat eachother poorly on the internet.
+
+The comments are interesting, but we can also look at the user statistics of reddit, and especially the common subreddits. For example if i am a user of the subreddit gaming, am i also probably using subreddit for pokemon? 
 
 # Subreddits and Categories Network
 
-* Networks: why are they interesting
-* Subreddit network: Used Louvain to detect clusters of similar reddits, ForceAtlas to draw them in clustered
-* Node size is based on how many users two nodes have in common with its neighbors
-* Note that the biggest nodes are clustered together in the midelle
+Networks can be interesting, because if we set it up correctly, we can gain information of how much users are mixed on each subreddit. 
+
+The image below is a network, and a network is a graph which have "nodes" and "edges". A node is represented as one of the coloured circles, and an edge is a line. There are many unique users on each subreddit, and they are of course allowed to post on all the subreddits that they want to. And many people post or comment to multiple subreddits. Each edge shows that there are a user which has commented on both subreddits. So for example if i as a user has posted on the subreddit /r/gaming, and have also posted on /r/pokemon. The node that represents gaming, will have an edge to the node that represents pokemon. The bigger a node is, the more edges does it have, meaning that it has more common users between multiple subreddits. 
 
 <div align="center">
 	<img src="./Images/Subreddit_Network.png" />
 </div>
 
-* Did the exact same thing as above, but with the categories
-* Unsurprisingly they are still clustered after size.
+It is however a bit hard to see anything on the network above, which is why the same thing has been done with categories rather than subreddits.
 
 <div align="center">
 	<img src="./Images/Categories_Network.png" />
 </div>
 
-* Erased all edges but the strongest one to show which category the other categories share the most users with. All link to 'Images, Gifs and Videos'
-* Most likely because 'Images, Gifs and Videos' has the most subreddits.
+Here we can clearly see which categories that has the most common users. All of them are actually linking to "Images,Gifs and Videos". It is also a very big category, since the subreddits in it are the most popular in all of reddit.
+
 * Reference bar graph below, which shows the number of reddits in each category.
 
 <div align="center">
