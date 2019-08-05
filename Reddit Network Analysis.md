@@ -13,6 +13,10 @@ Each of the categories is from a subreddit called "TheoryOfReddit". Here people 
 
 The data is fetched from reddit in the start of November 2018. <a href="https://drive.google.com/open?id=1uvFVS-QrKgAvG0nZnEKb190qXhydq9av">The data can be found here.</a>
 
+The data has been worked with using Python.  <a href="https://nbviewer.jupyter.org/github/Jesperstriker/Jesperstriker.github.io/blob/master/Final_edit.ipynb">The notebook can be found here.</a> 
+
+
+
 # The comments
 
 Let's start by looking at the comments and more particularly what they consist of. Below you can see the most used words in each category.
@@ -76,9 +80,7 @@ It is however a bit hard to see anything on the network above, which is why the 
 	<img src="./Images/Categories_Network.png" />
 </div>
 
-Here we can clearly see which categories that has the most common users. All of them are actually linking to "Images,Gifs and Videos". It is also a very big category, since the subreddits in it are the most popular in all of reddit.
-
-* Reference bar graph below, which shows the number of reddits in each category.
+Down below can we see which categories that has the most common users. All of them are actually linking to "Images,Gifs and Videos". It is also a very big category and have the most subreddits, the subreddits in it are also the most popular in all of reddit. Which also makes perfectly good sense, that people are spending time sharing and viewing other videos, especially humoristic videos!
 
 <div align="center">
 	<img src="./Images/Categories_Network_strongest.png" />
@@ -88,9 +90,13 @@ Here we can clearly see which categories that has the most common users. All of 
 	<img src="./Images/Categories_subreddit_count.png" />
 </div>
 
-* Finally; a confusion matrix which shows the percentage of shared users between each category
-* Notice that 'Sports'/'Race, Gender and Identity' is lowest
-* 'Humor'/'Images, Gifs and Videos' is the highest.
+The reference bar graph can be seen above, which shows the number of subreddits in each category. And here you can see that the "Images, Gifs and Videos" category is the largest. 
+
+Finally a confusion matrix has been made, to show the percentages of shared users between each of the categories. Each row and column shows a small square, and each square is coloured depending on the percentage of users that are common in both subreddits. We can see that when people use the sports category they have low likelihood of using other categories. Most likely because it is people who are very interested in sports, so they are sticking to their own discussion.
+
+The interesting part is that also the users from Race, Gender and Identity have a low likelihood of commenting or posting on another Subreddit. 
+
+And of course, "Humor" and "Images,Gifs and Videos" are the users are spending the most time, other than their interests. It also makes perfectly sense, that users would spend their time on a subreddit in a category that fits their interests. But humor always matches interest for all of us!
 
 <div align="center">
 	<img src="./Images/Users_Overlap_Matrix.png" />
